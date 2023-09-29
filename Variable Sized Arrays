@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int x,y,z=0;
+    cin>>x>>y;
+    int *arr[x];
+    while(x--){
+        int num1;
+        cin>>num1;
+        arr[z]=new int[num1];
+        for(int i=0;i<num1;i++){
+            cin>>arr[z][i];
+        }
+        z++;
+    }
+    while(y--){
+        int a,b;
+        cin>>a>>b;
+        cout<<arr[a][b]<<endl;
+    }
+    return 0;
+}
