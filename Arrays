@@ -1,0 +1,27 @@
+// Question: Print the N integers of the array in the reverse order, space-separated on a single line.
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+void reverse(int array[], int size){
+    for(int i = size - 1; i>=0; i--){
+        cout<<array[i]<<" ";
+    }
+}
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int i;
+    int size;
+    cin>>size;
+    int array[size];
+    for(i=0; i<size; i++){
+        cin>>array[i];
+    }
+    reverse(array,size);
+    return 0;
+}
