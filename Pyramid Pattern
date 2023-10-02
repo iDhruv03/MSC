@@ -1,4 +1,4 @@
-// https://www.geeksforgeeks.org/cpp-program-to-print-pyramid-patterns/
+// Question: https://www.geeksforgeeks.org/cpp-program-to-print-pyramid-patterns/
 
 #include<iostream>
 using namespace std;
