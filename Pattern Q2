@@ -1,0 +1,31 @@
+// Question: Print the pattern of Q1 in reverse order https://github.com/iDhruv03/MSC-30-Days-Challenge/blob/main/Pattern%20Question%201
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int a;
+    cin>>a;
+    int i=1;
+    while (i<=a)
+    {
+        int b=1;
+       while (b<=a)
+       {
+        /* code */
+        cout<<a-b+1<<" ";
+        b = b+1;
+       }
+       cout<<endl;
+       i = i+1;
+        
+
+    }
+    
+
+    return 0;
+}
+
+
