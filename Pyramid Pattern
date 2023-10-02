@@ -1,0 +1,29 @@
+// https://www.geeksforgeeks.org/cpp-program-to-print-pyramid-patterns/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cin>>n;
+    int rows = 1;
+
+    while (rows<=n)
+    {
+        int col = 1;
+        while (col<=rows)   
+        {
+            /* code */
+            cout<<"*";
+            col = col + 1;  
+            
+        }   
+        cout<<endl;
+        rows = rows + 1;
+        /* code */
+    }
+    
+
+    return 0;
+}
