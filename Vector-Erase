@@ -1,0 +1,48 @@
+// Question: Print the size of the vector in the first line and the elements of the vector after the two erase operations in the second line separated by space.
+
+#include <math.h>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n ;
+    cin>>n;
+    
+    vector<int>  v;
+    
+    int a;
+    for(int i =0;i<n;i++){
+        cin>>a;
+        v.push_back(a);
+    }
+  
+    
+    int p1; 
+    cin>>p1;
+    
+    v.erase(v.begin()+p1-1);
+    
+  
+    
+    int a2, b;  
+    cin>>a2>>b;
+    
+    
+    v.erase(v.begin()+a2-1,v.begin()+b-1);
+    
+    
+   
+    
+    
+    cout<<v.size()<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+    }
+    
+    
+}
