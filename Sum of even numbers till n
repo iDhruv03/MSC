@@ -1,0 +1,28 @@
+//Question: Find the sum of all the even numbers till n.
+
+        #include<iostream>
+        using namespace std;
+
+        int main()
+        {
+
+            int n;
+            cin>>n;
+            
+            int sum = 0;
+            int a = 2;
+            while (a<=n)
+            {
+                if (a % 2 ==0 )
+                {
+                    sum = sum + a;
+                   
+
+                }
+                a = a + 1;
+            }
+                cout<<sum;
+                
+
+            return 0;
+        }
